@@ -55,14 +55,29 @@ class MIS{
 		return citinic;
 	}
 	
+	void search(){
+	MIS sis;
+	int snic;
+	cout<<"\n\nenter nic number of the person = ";
+	cin>>snic;
+	if(snic==sis.return_citinic()){
+		sis.put_data();	
+	}
+	else{
+		cout<<"not found.....";
+	}
+
+}
+
 };
 
 int main(){
 	MIS mis;
+
 	mis.get_data();
 	mis.put_data();
 	int x=mis.return_citinic();
-	cout<<x;
+	mis.search();
 	
 	
 	
