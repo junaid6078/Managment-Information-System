@@ -51,12 +51,18 @@ class MIS{
 		cout<<"\nchildren's address = "<<childadd;
 		
 	}
+	int return_citinic(){
+		return citinic;
+	}
+	
 };
 
 int main(){
 	MIS mis;
 	mis.get_data();
 	mis.put_data();
+	int x=mis.return_citinic();
+	cout<<x;
 	
 	
 	
